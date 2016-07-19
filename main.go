@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/maiah/gopheryplay/consumer"
 )
 
 func main() {
@@ -13,4 +14,7 @@ func main() {
 
 	m := <-c
 	fmt.Println(m)
+	speak()
+	speak2()
+	consumer.Speak()
 }
